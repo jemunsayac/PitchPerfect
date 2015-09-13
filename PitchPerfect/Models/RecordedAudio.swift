@@ -21,6 +21,6 @@ public class RecordedAudio: NSObject {
         }
     }
     
-    var filePathUrl: NSURL!
-    var title: String!
+    public private(set) var filePathUrl: NSURL!
+    public private(set) var title: String!
 }
