@@ -10,14 +10,14 @@
 	<string>PitchPerfect</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>8E1CA64D39F40D38099BB34543A9D1F3E0C4FFAF</key>
+		<key>833C442C79108491DF9BDC3E98474EEC42541158</key>
 		<string>https://github.com/jemunsayac/PitchPerfect.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>PitchPerfect.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>8E1CA64D39F40D38099BB34543A9D1F3E0C4FFAF</key>
+		<key>833C442C79108491DF9BDC3E98474EEC42541158</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>8E1CA64D39F40D38099BB34543A9D1F3E0C4FFAF</string>
+	<string>833C442C79108491DF9BDC3E98474EEC42541158</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>8E1CA64D39F40D38099BB34543A9D1F3E0C4FFAF</string>
+			<string>833C442C79108491DF9BDC3E98474EEC42541158</string>
 			<key>IDESourceControlWCCName</key>
 			<string>PitchPerfect</string>
 		</dict>
