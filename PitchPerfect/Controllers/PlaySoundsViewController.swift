@@ -3,7 +3,6 @@
 //  Pitch Perfect
 //
 //  Created by JM Munsayac on 9/7/15.
-//  Project is using X-Code v7.0 beta 6
 //  Copyright © 2015 JM Munsayac. All rights reserved.
 //
 
