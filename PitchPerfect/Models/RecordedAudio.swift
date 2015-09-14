@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class RecordedAudio: NSObject {
+public class RecordedAudio {
     
     public init(filePathUrl: NSURL!, title: String!) {
         

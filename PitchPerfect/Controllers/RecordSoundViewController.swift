@@ -23,6 +23,8 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
         stopAudioBtn.hidden = true
         recordAudioBtn.enabled = true
         recordingInProgress.text = "Tap to Record"
@@ -33,6 +35,8 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
     }
    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        super.prepareForSegue(segue, sender: sender)
+        
         //code snippet will make sure the data from this controller can be accessed to the other controller
         if (segue.identifier == "stopRecording") {
             let playSoundsVC:PlaySoundsViewController = segue.destinationViewController as! PlaySoundsViewController
@@ -71,10 +75,18 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
         recordingInProgress.text = "Tap to Record"
     }
     
+    /*
+    * Function Name: audioRecorderDidFinishRecording
+    * Description: delegate to check if the recording has finished.
+    *
+    * Parameters:
+    *      recorder : AVAudioRecorder object to be used
+    *      successfully flag : bool to check if the recording has succsesfully completed
+    */
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder, successfully flag: Bool) {
         if(flag) {
             recordedAudio = RecordedAudio(filePathUrl: recorder.url, title: recorder.url.lastPathComponent)
-            self.performSegueWithIdentifier("stopRecording", sender: recordedAudio)
+            performSegueWithIdentifier("stopRecording", sender: recordedAudio)
         }
         else {
             print("Ooops! someting went wrong...")
