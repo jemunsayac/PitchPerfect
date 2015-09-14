@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Sd-jj-tpx">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Sd-jj-tpx">
                                 <rect key="frame" x="53" y="86" width="97" height="97"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="GhM-Gr-Ldk"/>
@@ -28,7 +28,7 @@
                                     <action selector="playSlowly:" destination="UC5-fR-y7J" eventType="touchUpInside" id="lta-dc-zM4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHk-Ng-9v5">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHk-Ng-9v5">
                                 <rect key="frame" x="53" y="218" width="97" height="97"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="97" id="1kJ-sM-coy"/>
@@ -38,7 +38,7 @@
                                     <action selector="playChipmunkAudio:" destination="UC5-fR-y7J" eventType="touchUpInside" id="bB2-2v-ZWf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsK-fR-WbL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsK-fR-WbL">
                                 <rect key="frame" x="170" y="218" width="97" height="97"/>
                                 <state key="normal" image="darthvader"/>
                                 <connections>
@@ -61,7 +61,7 @@
                                     <action selector="stopAudioPlay:" destination="UC5-fR-y7J" eventType="touchUpInside" id="EYs-Lt-oEl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gG-yr-j5a">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gG-yr-j5a">
                                 <rect key="frame" x="170" y="86" width="97" height="97"/>
                                 <state key="normal" title="" image="fastPlayButton"/>
                                 <connections>
@@ -72,7 +72,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="xsK-fR-WbL" secondAttribute="trailing" constant="37" id="3It-yW-gWX"/>
+                            <constraint firstItem="gHk-Ng-9v5" firstAttribute="top" secondItem="8Sd-jj-tpx" secondAttribute="bottom" constant="35" id="5PL-hZ-p4w"/>
+                            <constraint firstItem="6gG-yr-j5a" firstAttribute="top" secondItem="8Sd-jj-tpx" secondAttribute="top" id="66N-kX-CwD"/>
+                            <constraint firstItem="bUJ-U9-nrX" firstAttribute="top" secondItem="gHk-Ng-9v5" secondAttribute="bottom" constant="54" id="AfL-JO-nhc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6gG-yr-j5a" secondAttribute="trailing" constant="37" id="B5N-BL-AVD"/>
+                            <constraint firstItem="gHk-Ng-9v5" firstAttribute="bottom" secondItem="xsK-fR-WbL" secondAttribute="bottom" id="Dbv-UV-fBP"/>
                             <constraint firstAttribute="centerY" secondItem="bUJ-U9-nrX" secondAttribute="centerY" constant="-95.5" id="GCX-bx-Fdp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8Sd-jj-tpx" secondAttribute="trailing" constant="154" id="QiU-ec-oqz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bUJ-U9-nrX" secondAttribute="trailing" constant="69" id="R2M-pa-Rd0"/>
@@ -85,6 +89,8 @@
                             <constraint firstItem="6gG-yr-j5a" firstAttribute="leading" secondItem="TFT-J0-woF" secondAttribute="leadingMargin" constant="154" id="gRd-HA-nUl"/>
                             <constraint firstItem="kHd-Jo-3wW" firstAttribute="top" secondItem="Q71-ie-Q1J" secondAttribute="bottom" constant="8" id="hZp-sf-j4T"/>
                             <constraint firstItem="xsK-fR-WbL" firstAttribute="leading" secondItem="TFT-J0-woF" secondAttribute="leadingMargin" constant="154" id="jmS-N5-jgs"/>
+                            <constraint firstItem="gHk-Ng-9v5" firstAttribute="top" secondItem="xsK-fR-WbL" secondAttribute="top" id="psT-6R-hTb"/>
+                            <constraint firstItem="6gG-yr-j5a" firstAttribute="bottom" secondItem="8Sd-jj-tpx" secondAttribute="bottom" id="tZI-bc-99b"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2KJ-Co-sm3"/>
